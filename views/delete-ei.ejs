@@ -1,0 +1,47 @@
+<%- include("_header") -%>
+
+<h1 class="mt-2 mb-4">Удалить?</h1>
+
+<form action="/delete-ei/<%= model.ei_id %>" method="post">
+  <div class="form-horizontal">
+
+    <div class="form-group row">
+      <label class="col-form-label col-sm-2" for="ei_id">ID единицы измерения</label>
+      <div class="col-sm-8">
+        <input readonly class="form-control" id="ei_id" name="ei_id" value="<%= model.ei_id %>"/>
+      </div>
+    </div>
+    
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2" for="name">Название</label>
+      <div class="col-sm-8">
+        <input readonly class="form-control" id="name" name="name" value="<%= model.name %>"/>
+      </div>
+    </div>
+    
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2" for="short_name">Короткое название</label>
+      <div class="col-sm-7">
+        <input readonly class="form-control" id="short_name" name="short_name" value="<%= model.short_name %>"/>
+      </div>
+    </div>
+    
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2" for="code">Код</label>
+      <div class="col-sm-8">
+        <input readonly class="form-control" id="code" name="code" value="<%= model.code %>"/>
+      </div>
+    </div>
+
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2"></label>
+      <div class="col-sm-10">
+        <input type="submit" name="action" value="Удалить" class="btn btn-default btn-danger" />
+        <a class="btn btn-outline-dark cancel" href="/ei">Обратно</a>
+      </div>
+    </div>
+  
+  </div>
+</form>
+
+<%- include("_footer") -%>

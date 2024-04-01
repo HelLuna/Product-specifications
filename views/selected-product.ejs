@@ -1,0 +1,11 @@
+<%- include("_header") -%>
+
+<h1 class="mt-2 mb-4">Изделие: <%= model.name %></h1>
+
+<div class="d-flex flex-column align-items-start">
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-product/find-classes/<%= model.prod_id %>">Граф классов продукта</a>
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-product/find-parents/<%= model.prod_id %>">Найти родителей</a>
+  <a class="btn btn-outline-dark cancel mt-5" href="/products">Обратно</a>
+</div>
+
+<%- include("_footer") -%>

@@ -1,0 +1,27 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="pos_num">Позиция</label>
+  <div class="col-sm-8">
+    <input readonly  class="form-control" id="pos_num" name="pos_num" value="<%= model.pos_num %>" placeholder="Заполнится автоматически" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="prod_id">ID изделия</label>
+  <div class="col-sm-8">
+    <input autofocus class="form-control" id="name" name="prod_id" value="<%= model.prod_id %>" placeholder="Например, Д04" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="part_id">ID составной части</label>
+  <div class="col-sm-7">
+    <input class="form-control" id="part_id" name="part_id" value="<%= model.part_id %>" placeholder="Например, РФ26" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="quantity">Количество частей</label>
+  <div class="col-sm-8">
+    <input class="form-control" id="quantity" name="quantity" value="<%= model.quantity %>" placeholder="Количество, например, 3" required/>
+  </div>
+</div>

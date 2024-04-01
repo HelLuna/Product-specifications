@@ -1,0 +1,32 @@
+<%- include("_header") -%>
+
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID класса</th>
+        <th>Название</th>
+        <th>ЕИ</th>
+        <th>ID класса-родителя</th>
+        <th>ID изделия</th>
+        <th>Изделие</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const tmp of model) { %>
+        <tr>
+          <td><%= tmp.result_class_id %></td>
+          <td><%= tmp.result_name %></td>
+          <td><%= tmp.short_name %></td>
+          <td><%= tmp.result_parent_class_id %></td>
+          <td><%= tmp.result_prod_id %></td>
+          <td><%= tmp.result_prod_name %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<a class="btn btn-outline-dark cancel" href="/classes">Обратно</a>
+
+<%- include("_footer") -%>

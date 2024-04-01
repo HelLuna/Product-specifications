@@ -1,0 +1,20 @@
+<%- include("_header") -%>
+
+<h1 class="mt-2 mb-4">Обновить ЕИ</h1>
+
+<form action="/edit-ei/<%= model.ei_id %>" method="post">
+  <div class="form-horizontal">
+
+    <%- include("_ei-editor") -%>
+
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2"></label>
+      <div class="col-sm-10">
+        <input type="submit" value="Обновить" class="btn btn-default btn-warning" />
+        <a class="btn btn-outline-dark cancel" href="/ei">Обратно</a>
+      </div>
+    </div>
+  </div>
+</form>
+
+<%- include("_footer") -%>

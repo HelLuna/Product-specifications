@@ -1,0 +1,13 @@
+<%- include("_header") -%>
+
+<h1 class="mt-2 mb-4">Выбранный класс: <%= model.name %></h1>
+
+<div class="d-flex flex-column align-items-start">
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-class/find-class-desc/<%= model.class_id %>">Найти потомков</a>
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-class/find-class-desc-prod/<%= model.class_id %>">Найти всех потомков, включая изделия</a>
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-class/find-parent-class/<%= model.class_id %>">Найти родителей</a>
+  <a class="btn btn-sm btn-warning mt-3" href="/selected-class/find-class-products/<%= model.class_id %>">Найти изделия</a>
+  <a class="btn btn-outline-dark cancel mt-5" href="/classes">Обратно</a>
+</div>
+
+<%- include("_footer") -%>

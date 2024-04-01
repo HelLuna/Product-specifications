@@ -1,0 +1,24 @@
+<%- include("_header") -%>
+
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Путь</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const tmp of model) { %>
+        <tr>
+          <td><%= tmp.product_name %></td>
+          <td><%= tmp.class_names %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<a class="btn btn-outline-dark cancel" href="/products">Обратно</a>
+
+<%- include("_footer") -%>

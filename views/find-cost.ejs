@@ -1,0 +1,27 @@
+<%- include("_header") -%>
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Наименование</th>
+        <th>Количество</th>
+        <th>ЕИ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const tmp of model) { %>
+        <tr>
+          <td><%= tmp.prod_id %></td>
+          <td><%= tmp.name %></td>
+          <td><%= tmp.quantity %></td>
+          <td><%= tmp.result_ei_name %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<a class="btn btn-outline-dark cancel" href="/specifications">Обратно</a>
+
+<%- include("_footer") -%>

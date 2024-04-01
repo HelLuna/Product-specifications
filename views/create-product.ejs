@@ -1,0 +1,20 @@
+<%- include("_header") -%>
+
+<h1 class="mt-2 mb-4">Создать изделие</h1>
+
+<form action="/create-product" method="post">
+  <div class="form-horizontal">
+
+    <%- include("_product-editor") -%>
+
+    <div class="form-group row mt-3">
+      <label class="col-form-label col-sm-2"></label>
+      <div class="col-sm-10">
+        <input type="submit" value="Сохранить" class="btn btn-default btn-success" />
+        <a class="btn btn-outline-dark cancel" href="/products">Обратно</a>
+      </div>
+    </div>
+  </div>
+</form>
+
+<%- include("_footer") -%>

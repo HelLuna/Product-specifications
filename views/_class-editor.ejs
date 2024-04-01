@@ -1,0 +1,27 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="class_id">ID класса</label>
+  <div class="col-sm-8">
+    <input readonly class="form-control" id="class_id" name="class_id" value="<%= model.class_id %>" placeholder="Заполнится автоматически" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="name">Название</label>
+  <div class="col-sm-8">
+    <input autofocus class="form-control" id="name" name="name" value="<%= model.name %>" placeholder="Название, например, Гвозди" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="ei_id">Единица измерения</label>
+  <div class="col-sm-7">
+    <input class="form-control" id="ei_id" name="ei_id" value="<%= model.ei_id %>" placeholder="ID ЕИ, например, 1" required/>
+  </div>
+</div>
+
+<div class="form-group row mt-3">
+  <label class="col-form-label col-sm-2" for="parent_class_id">ID родителя</label>
+  <div class="col-sm-8">
+    <input class="form-control" id="parent_class_id" name="parent_class_id" value="<%= model.parent_class_id %>" placeholder="ID родительского класса, например, 19"/>
+  </div>
+</div>
